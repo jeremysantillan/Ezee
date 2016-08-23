@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/etNumber"
+        android:background="#e9e9e9"
+        android:textSize="20sp"
+        android:hint="Enter contact number"
+        android:textColorHint="#c5c5c5"
+        android:layout_above="@+id/btnContacts"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:text="SEARCH CONTACT"
+        android:textColor="#e74c3c"
+
+        android:id="@+id/btnContacts"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+      android:background="@drawable/call_btn"
+        android:id="@+id/btnTawag"
+        android:enabled="false"
+        android:layout_below="@+id/btnContacts"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/txtName"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/btnTawag"
+        android:layout_toEndOf="@+id/btnTawag" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/imageView6"
+        android:src="@drawable/ezee"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>
